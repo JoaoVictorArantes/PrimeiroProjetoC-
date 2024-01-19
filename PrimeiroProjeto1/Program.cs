@@ -4,6 +4,8 @@ Console.WriteLine("Hello, World!");
 
 //using System; //ja está implícito que o system esta sendo usado
 
+// Retire o comentário da parte que você gostaria de testar.
+
 namespace PrimeiroProjeto1
 {
     class Program
@@ -165,7 +167,9 @@ namespace PrimeiroProjeto1
                  Console.WriteLine("Ola " + nome);
             }
             
-            int hora = 20; // MANEIRA CURTA DE FAZER UM IF ELSE EM C#!!!
+            int hora = 20; 
+            
+            // MANEIRA CURTA DE FAZER UM IF ELSE EM C#!!!
             string resultado = (hora < 18) ? "Good day." : "Good evening."; // Se (if) o que esta em parenteses for verdadeiro então (?) bom-dia ao contrario (else :) boa noite. 
             Console.WriteLine(resultado); // variavel = (condição) ? casoVerdadeira :  casoFalso;
 
@@ -699,7 +703,7 @@ namespace PrimeiroProjeto1
 
             //============= exception handling =============
 
-            // /*
+            /*
 
             //  exception = erros que ocorrem durante a execução;
 
@@ -709,17 +713,199 @@ namespace PrimeiroProjeto1
 
             int numero1;
             int numero2;
-            double resultado;
+            int resultado;
 
-            Console.Write("Digite o numero 1: ");
-            numero1 = Convert.ToInt32(Console.ReadLine);
+            try
+            {
 
-            Console.Write("Digite o numero 1: ");
-            numero2 = Convert.ToInt32(Console.ReadLine);
+                Console.Write("Digite o numero 1: ");
+                numero1 = Convert.ToInt32(Console.ReadLine());
 
-            resultado = numero1 + numero2;
+                Console.Write("Digite o numero 2: ");
+                numero2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Resultado");
+                resultado = numero1 / numero2;
+
+                Console.WriteLine("Resultado: " + resultado);
+
+            } catch (FormatException e)
+            {
+                Console.WriteLine("Digite um numero válido! :(");
+            } catch (DivideByZeroException e) 
+            {
+                Console.WriteLine("Não é possivel dividir por zero! :(");
+            }catch (Exception e) //Ele pega qualquer exceção que aparece. É problematico de usar pois fica dificil dizer o que aconteceu de errado. (Poor practice)
+            {
+                Console.WriteLine("Alguma coisa deu errado! :(");
+            }   finally //Executa independente de ter erro ou não. Comum de ser usado para fechar arquivos pós uso. (Ex. após instalar/ desinstalar um programa)
+            {
+                Console.WriteLine(":)");
+            }
+
+            */
+
+            //=============  =============
+
+            /*
+
+            //  String interpolation = Permite inserir variaveis em uma string (EX: Console.WriteLine("Esse tipo de String");)
+            //  Precede de $
+            //  {} é onde você vai colocar o nome da variavel na string.
+
+            String primeiroNome = "João";
+            String segundoNome = "Victor";
+            int idade = 24;
+
+            //Sem interpolação de String.
+            Console.WriteLine("Olá, " + primeiroNome + " " + segundoNome + ", tudo bem? ");
+            Console.WriteLine("Você tem " + idade + " de idade.");
+
+            //Com interpolação de String.
+            Console.WriteLine($"Olá, {primeiroNome} {segundoNome}, tudo bem? ");
+            Console.WriteLine($"Você tem {idade,10} de idade.");// O ", 10" é para dar 10 espaços antes o valor da interpolação. (Pode ser qualquer valor, caso coloque um valor negativo muda pa onde vai os espaços)
+
+            */
+
+            //============= multidimensional arrays =============
+
+            /*
+
+            String[] fiat = { "Siena", "Palio", "Uno" };
+            String[] honda= { "City", "Civic","Pcx"};
+            String[] yamaha = {"Mt-03", "Mt-07", "R3" };
+
+            String[,] concessionaria = { { "Siena", "Palio", "Uno" } , 
+                                         { "City", "Civic", "Pcx" } , 
+                                         { "Mt-03", "Mt-07", "R3" }
+                                       };
+
+            //Console.WriteLine(concessionaria[0, 2]);//concessionaria fila 0, coluna 2.
+
+            concessionaria[1, 0] = "Hrv";
+            concessionaria[2, 2] = "R1";
+
+            /*
+            foreach (String automovel in concessionaria)
+            {
+                Console.WriteLine(automovel);
+            } 
+            *-/
+
+            for (int i = 0; i < concessionaria.GetLength(0); i++)
+            {
+                for (int j = 0; j < concessionaria.GetLength(1); j++)
+                {
+                    Console.Write($" {concessionaria[i,j]} ");
+                }
+                Console.WriteLine();
+            }
+
+            */
+
+            //============= classes =============
+
+            // PARA USAR TIRE O /* */ DAS SEGUINTES CLASSE: OLA, ESPERANDO E TCHAU;
+            // OU USE A CLASSE MENSAGENS CRIADA FORA DESTE ARQUIVO
+
+            /*
+
+            // class = um pacote de codigo;
+            // pode ser usado como um diagrama/blueprint para criar objetos em poo;
+
+            Mensagens.ola();
+            Mensagens.esperando();
+            Mensagens.tchau();
+             
+            */
+
+            //============= OBJETOS e construtores =============
+
+            // TIRAR O /* *-/ DA CLASSE HUMANO
+
+            /*
+
+            //  Objetos são instancias de uma classe
+            //  pode ser usado como um diagrama/blueprint para criar objetos em poo;
+            //  Objetos tem campos e metodos (caracteristicas e ações);
+
+            // Metodo especial de um objeto
+            // tem o mesmo nome da classe
+            // pode ser usado para designar argumentos para as caracteristicas/fields quando criando um objeto; 
+
+            Humano humano1 = new Humano("João", 24);
+            Humano humano2 = new Humano("Leonardo", 21);
+
+
+            //humano1.nome = "João"; // Como eu criei um construtor eu posso colocar esses dados no momento da instanciação do objeto.
+            //humano1.idade = 24;
+
+            //humano2.nome = "Leonardo";
+            //humano2.idade = 21;
+
+            humano1.comer();
+            humano1.dormir();
+
+            humano2.comer();
+            humano2.dormir();
+
+            */
+
+            //============= STATIC =============
+
+            // TIRAR O /* *-/ DA CLASSE CARRO
+
+
+            /*
+
+            //  Modificador para declarar um membro estatico, que pertence a uma classe ao invés de um objeto em especifico.
+
+            Carro carro = new Carro("Mustang");
+            Carro carro1 = new Carro("Siena");
+            Carro carro2 = new Carro("Fox");
+
+            //Console.WriteLine(carro.numeroCarros); // Maneira não estatica = cada objeto terá o seu
+            //Console.WriteLine(carro1.numeroCarros);
+
+            Console.WriteLine(Carro.numeroCarros); // Maneira estatica = conta da classe como um todo e não de cada objeto da classe.
+
+            Carro.comecoCorrida();
+            Carro.fimCorrida();
+
+            */
+
+            //============= overloaded constructors =============
+
+            // TIRAR O /* *-/ DA CLASSE PIZZA
+
+
+            /*
+
+            //  constructor overloading = Tecnica de criar multiplos construtores com diferentes parametros;
+            //  nome + parametros = asinatura do metodo;
+            //  metodos devem ter uma assinatura única;
+
+            Pizza pizza = new Pizza("massa1", "Molho de tomate", "cheddar","Catupiri");
+            Pizza pizza1 = new Pizza("massa2", "Molho a bolonhesa", "Prato");
+
+            pizza.ingredientes();
+            pizza1.ingredientes();
+
+
+            */
+
+            //============= inheritance =============
+
+            // /*
+
+
+
+            // */
+
+            //============= abstract classes =============
+
+            // /*
+
+
 
             // */
 
@@ -728,6 +914,7 @@ namespace PrimeiroProjeto1
             // /*
 
 
+
             // */
 
             //=============  =============
@@ -735,7 +922,18 @@ namespace PrimeiroProjeto1
             // /*
 
 
+
             // */
+
+            //=============  =============
+
+            // /*
+
+
+
+            // */
+
+
 
 
             Console.ReadKey();
@@ -780,4 +978,97 @@ namespace PrimeiroProjeto1
         */
 
     }
+    /*
+    class mensagens
+    {
+        void ola()
+        {
+            Console.WriteLine("Olá! Tudo bem?");
+        }
+
+        void esperando()
+        {
+            Console.WriteLine("Estou esperando algo, o que? não sei kkkk");
+        }
+
+        void tchau ()
+        {
+            Console.WriteLine("Até mais! Obrigado por usar o meu programa! :)");
+        }        
+    }
+    */
+    /*
+    class Humano
+    {
+        public String nome; //fields/ caracteristicas do objeto
+        public int idade;//fieds/ caracteristicas do objeto
+
+        public Humano (String nome, int idade)
+        {
+            this.nome = nome;
+            this.idade = idade;
+        }
+
+        public void comer()//metodos são o que um objeto pode fazer
+        {
+            Console.WriteLine($"{nome} está comendo.");
+        }
+
+        public void dormir()//metodos são o que um objeto pode fazer
+        {
+            Console.WriteLine($"{nome} está dormindo.");
+        }
+    }
+    */
+
+    /*
+    class Carro
+    {
+        String modelo;
+        // public int numeroCarros; //maneira não estatica
+        public static int numeroCarros; // Com o static isso se torna da classe e não do objeto.
+
+        public Carro(String modelo)
+        {
+            this.modelo = modelo;
+            numeroCarros++;
+        }
+
+        public static void comecoCorrida()
+        {
+            Console.WriteLine("Inicio da corrida!!! :)");
+        }
+        public static void fimCorrida()
+        {
+            Console.WriteLine("Fim da corrida!!! :(");
+        }
+    }
+    */
+    // /*
+    class Pizza
+    {
+        public String molho;
+        public String queijo;
+        public String massa;
+        public String recheioBorda;
+
+        public Pizza(String massa, String molho, String queijo)
+        {
+            this.molho = molho;
+            this.queijo = queijo;
+            this.massa = massa;
+        }
+        public Pizza(String massa, String molho, String queijo, String recheioBorda)
+        {
+            this.molho = molho;
+            this.queijo = queijo;
+            this.massa = massa;
+            this.recheioBorda = recheioBorda;
+        }
+        public void ingredientes()
+        {
+            Console.WriteLine($"A pizza tem a massa {massa}, com o molho {molho}, o queijo {queijo} e o recheio de {recheioBorda}");
+        }
+    }
+    // */
 }

@@ -12,3 +12,18 @@ C:\Users\m28713\Desktop\Aprendizado de C#\PrimeiroProjeto1\PrimeiroProjeto1\obj\
 C:\Users\m28713\Desktop\Aprendizado de C#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.pdb
 C:\Users\m28713\Desktop\Aprendizado de C#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.genruntimeconfig.cache
 C:\Users\m28713\Desktop\Aprendizado de C#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\ref\PrimeiroProjeto1.dll
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\bin\Debug\net8.0\PrimeiroProjeto1.exe
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\bin\Debug\net8.0\PrimeiroProjeto1.deps.json
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\bin\Debug\net8.0\PrimeiroProjeto1.runtimeconfig.json
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\bin\Debug\net8.0\PrimeiroProjeto1.dll
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\bin\Debug\net8.0\PrimeiroProjeto1.pdb
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.AssemblyInfoInputs.cache
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.AssemblyInfo.cs
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.csproj.CoreCompileInputs.cache
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.sourcelink.json
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.dll
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\refint\PrimeiroProjeto1.dll
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.pdb
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\PrimeiroProjeto1.genruntimeconfig.cache
+C:\Users\m28713\Desktop\AprendizadoC#\PrimeiroProjeto1\PrimeiroProjeto1\obj\Debug\net8.0\ref\PrimeiroProjeto1.dll
