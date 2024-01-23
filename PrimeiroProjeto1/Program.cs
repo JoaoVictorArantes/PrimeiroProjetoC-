@@ -893,7 +893,69 @@ namespace PrimeiroProjeto1
 
             */
 
-            //============= inheritance =============
+            //============= inheritance e abstract classes =============
+
+            // TIRAR O /* *-/ DA CLASSE VEICULO, CARRO, MOTO E BARCO
+
+
+            /*
+
+            // Herança = 1 ou mais classes 'filhas' recebendo 'campos/fields', metodos, etc. de uma classe 'mãe' em comum.
+            // abstract == Modificador que indica que está faltando componentes ou implementação. Impede de criar um objeto dessa classe com esse modificador .
+            // Verifique o erro da linha 909. O abstract também dá mais segurança ao código.
+
+            carro carro = new carro();
+            moto moto = new moto();
+            barco barco = new barco();
+            Veiculo veiculo = new Veiculo();
+
+            Console.WriteLine(carro.velocidade);
+            Console.WriteLine(carro.rodas);
+            carro.buzina();
+
+            Console.WriteLine(moto.velocidade);
+            Console.WriteLine(moto.rodas);
+            moto.buzina();
+
+            Console.WriteLine(barco.velocidade);
+            Console.WriteLine(barco.rodas);
+            barco.buzina();
+
+            */
+
+            //============= array of objects =============
+
+            // TIRAR O /* *-/ DA CLASSE CARRO1
+
+
+            /*
+
+            //carro1[] garagem = new carro1[3]; 
+
+            //carro1 carro = new carro1("Toro");
+            //carro1 carro1 = new carro1("Palio");
+            //carro1 carro2 = new carro1("Siena");
+
+            //garagem[0] = carro;
+            //garagem[1] = carro1;
+            //garagem[2] = carro2;
+
+            //Console.WriteLine(garagem[0].modelo);
+            //Console.WriteLine(garagem[1].modelo);
+            //Console.WriteLine(garagem[2].modelo);
+
+            // Ao invés de fazer o que está na parte acima, eu posso simplesmente fazer o que está na linha abaixo, assim simplificando o codigo.
+
+            carro1[] garagem = { new carro1("Toro"), new carro1("Palio"), new carro1("Siena") };
+
+            foreach (carro1 carro in garagem)
+            {
+                Console.WriteLine(carro.modelo);
+            }
+
+            */
+
+            //============= polymorphism  =============
 
             // /*
 
@@ -901,7 +963,7 @@ namespace PrimeiroProjeto1
 
             // */
 
-            //============= abstract classes =============
+            //============= interfaces  =============
 
             // /*
 
@@ -909,7 +971,7 @@ namespace PrimeiroProjeto1
 
             // */
 
-            //=============  =============
+            //============= Lists  =============
 
             // /*
 
@@ -917,7 +979,7 @@ namespace PrimeiroProjeto1
 
             // */
 
-            //=============  =============
+            //============= List of objects =============
 
             // /*
 
@@ -925,7 +987,7 @@ namespace PrimeiroProjeto1
 
             // */
 
-            //=============  =============
+            //============= getters & setters =============
 
             // /*
 
@@ -933,8 +995,37 @@ namespace PrimeiroProjeto1
 
             // */
 
+            //============= auto implemented properties =============
+
+            // /*
 
 
+
+            // */
+
+            //============= enums =============
+
+            // /*
+
+
+
+            // */
+
+            //============= generics =============
+
+            // /*
+
+
+
+            // */
+
+            //============= multithreading  =============
+
+            // /*
+
+
+
+            // */
 
             Console.ReadKey();
             Console.Beep();
@@ -1044,7 +1135,7 @@ namespace PrimeiroProjeto1
         }
     }
     */
-    // /*
+    /*
     class Pizza
     {
         public String molho;
@@ -1070,5 +1161,33 @@ namespace PrimeiroProjeto1
             Console.WriteLine($"A pizza tem a massa {massa}, com o molho {molho}, o queijo {queijo} e o recheio de {recheioBorda}");
         }
     }
-    // */
+    */
+    /*
+    abstract class Veiculo()
+    {   
+        public int velocidade = 0;
+        public void buzina() 
+        {
+            Console.WriteLine("Fon! Fon!");
+        }
+    }
+    class carro : Veiculo
+    {
+        public int rodas = 4;
+    }
+    class moto : Veiculo
+    {
+        public int rodas = 2;
+    }
+    class barco : Veiculo
+    {
+        public int rodas = 0;
+    }
+    */
+    /*
+    class carro1(String modelo)
+    {
+        public String modelo = modelo;
+    }
+    */
 }
